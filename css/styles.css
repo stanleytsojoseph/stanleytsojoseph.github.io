@@ -1,0 +1,392 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	height:100vh;
+	background-color: #f22061;
+
+;
+
+}
+
+.main{
+	overflow: hidden;
+	border: none;
+	position:fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -204px; /*set to a negative number 204px of your height*/
+    margin-left: -115px; /*set to a negative number 1/2 of your width*/
+    background-color: #f3f3f3;
+	width: 230px;
+	height: 408px;
+		 transition: background-color 1s 2s;
+	-webkit-box-shadow: 0px 0px 102px -11px rgba(147,36,81,1);
+-moz-box-shadow: 0px 0px 102px -11px rgba(147,36,81,1);
+box-shadow: 0px 0px 102px -11px rgba(147,36,81,1);
+}
+
+.nav{
+	width: 100%;
+	height: 30px;
+	background-color: #282828;
+		float: left;
+}
+
+
+/*.logo{
+	float: left;
+	margin: 8px;
+	 background: url(file:///Users/stanleyjoseph/Documents/%5Bweb%20projects%5D/credit%20card%20LIVE/img/reilogo.svg) no-repeat top left;
+  	background-size: contain;
+
+width: 20%;
+height: 12px;	
+}*/
+
+.hamburgermenu{
+	display: none;
+	float: left;
+margin-left: 65%;
+width: 15%;
+height: 100%;	
+}
+
+.hamburgermenu div{
+	float: left;
+	height: 2.5px;
+	margin-top: 2px;
+	width: 100%;
+	background-color: white;
+}
+
+.top{
+	float: left;
+	height:263px;
+	width: 100%;
+	padding: 8px;
+	 transition: opacity 1s 2s;
+
+	background: #8a8374; /* Old browsers */
+background: -moz-linear-gradient(45deg, #8a8374 51%, #a8a57d 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #8a8374 51%,#a8a57d 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #8a8374 51%,#a8a57d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a8374', endColorstr='#a8a57d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.itemsandlist{
+	border-radius: 3px;
+	width:100%;
+	height:100%;
+	background-color: #f7f2f7;
+	float: left;
+}
+
+.ialnav{
+	color: #636b5a;
+	border-radius: 3px 3px 0px 0px;
+	width: 100%;
+	float: left;
+	height: 19px;
+}
+
+.ialnav ul{
+	float: left;
+	width: 100%;
+	margin: 0px;
+	padding: 4px 0px 0px 0px;
+}
+
+.ialnav ul li{
+	padding:  0px;
+	margin: 0px;
+	width: 33.333%;
+	text-align: center;
+	display: inline;
+	list-style-type: none;
+	float: left;
+	font-size: 6pt;
+}
+
+.highlightedli{
+	color: #7357ff;
+}
+
+.itemspurchased{
+	height: 150px;
+	width: 230px;
+	margin-top:19px;
+    left: 0px;
+    position: absolute;
+	float: left;
+	box-shadow: 0 15px 20px -5px rgba(0,0,0,0.35);
+}
+
+
+.productnav{
+		padding-top: 135px;
+	width: 100%;
+	height: 20px;
+	float: left;
+	z-index: 5;
+	position: absolute;
+}
+
+.productnav ul{
+	margin: 0px auto;
+	padding: 0px;
+	padding-left: 90.5px;
+
+}
+
+.productnav ul li{
+	margin: 2.5px;
+	display: inline;
+	float: left;
+	width: 5px;
+	height: 5px;
+	background-color: #f4f4f4;
+	border-radius: 50%;
+}
+
+.selected {
+    background-color: #5e5e5e !important;
+}
+
+
+
+
+.purchasedpics{
+float: left;
+height: 100%;
+width: 100%;
+}
+
+.ppul{
+		position: absolute;
+	width: 500%;
+	height: 100%;
+	display: block;
+	float: left;
+	margin: 0;
+    padding: 0;
+    transition: left 1.5s;
+    left:0;
+}
+
+.purchasedpics ul li{
+
+list-style-type: none;
+height: 100%;
+width: 230px;
+margin: 0;
+padding: 0;
+float: left;
+display: block;
+}
+
+.purchasedpics ul li.one{
+
+	background-image: url("../img/fitbitforlive-01.jpg");
+background-size: cover;
+}
+.two{
+		background-image: url("../img/fitbitforlive-01.jpg");
+background-size: cover;
+}
+
+.three{
+	background-image: url("../img/fitbitforlive-01.jpg");
+background-size: cover;
+}
+
+.four{
+		background-image: url("../img/fitbitforlive-01.jpg");
+background-size: cover;
+}
+
+.prices{
+	border-radius: 0px 0px 3px 3px;
+    margin-top: 150px;
+    width: 100%;
+    height: 78px;
+    float: left;
+}
+
+.pricelist{
+	overflow: scroll;
+	float: left;
+	width: 100%;
+	height: 57px;
+}
+
+.pricelist::-webkit-scrollbar { 
+    display: none; 
+}
+
+.total{
+	width: 100%;
+	float: left;
+	height: 21px;
+	background-color: #d7eff7;
+	border-radius: 0px 0px 3px 3px;
+	font-size: 7pt;
+    padding: 4px 14px;
+    color: #636b5a;
+}
+
+.totallabel{
+	float: left;
+}
+
+.totalsum{
+	float: right;
+}
+
+.itemsandprices{
+		width: 100%;
+		float: left;
+		font-size: 6pt;
+}
+
+.itemsandprices ul{
+margin: 5px 0px 0px 0px;
+float: left;
+width: 100%;
+padding: 0px 14px 4px 14px;
+}
+
+.itemsandprices li{
+		width: 100%;
+		padding: 1px 0px;
+		float: left;
+		list-style-type: none;
+}
+
+.item{
+	float:left;
+}
+
+.itemprice{
+	float: right;
+}
+
+
+.tax{
+	float:left;
+	color: #a8a7a8;
+}
+
+.totalprice{
+	float: right;	
+	color: #a8a7a8;	
+}
+
+
+.bottom{
+	float: left;
+	background-color: #f7f2f7;
+	width: 100%;
+	height: 145px;
+}
+
+.creditc{
+	transition: opacity 1s 2s;
+	height: 80px;
+	width:100%;
+	padding: 8px;
+	float: left;
+}
+
+.ccnumber{
+		position: relative;
+		padding: 4px;
+	font-size: 6pt;
+	border: 1px solid #d9d6e8;
+	margin: 0px 0px 5px 0px;
+	width: 100%;
+	height:30px;
+	background-color: white;
+		float: left;
+}
+
+.ccexpiration{
+		padding: 4px;
+	position: relative;
+	font-size: 6pt;
+	border: 1px solid #d9d6e8;
+	height:30px;
+	margin:0px 2.5px 0px 0px;
+	width: calc(50% - 2.5px);
+	display: inline;
+	background-color: white;
+	float: left;
+}
+
+.cvc{
+	position: relative;
+	padding: 4px;
+	font-size: 6pt;
+	border: 1px solid #d9d6e8;
+	height:30px;
+	margin:0px 0px 0px 2.5px;
+	width: calc(50% - 2.5px);
+	display: inline;
+	background-color: white;
+		float: left;
+}
+
+.content{
+	color: #7c7c7c;
+	padding: 4px;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.checkoutbutton{	
+    position: absolute;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    font-size: 8pt;
+    padding-top: 9px;
+    float: left;
+    width: 100%;
+    height: 36px;
+    background-color: #503cdd;
+    bottom: 0px;
+    transition: height 1s 2s;
+}
+
+.checkoutbutton:active{
+	background-color: #3a2fcc;
+}
+
+
+
+.clickcheckout{
+height:378.25px;
+}
+
+.postclick{	
+	line-height: 2;
+	padding: 180px 40px 0px 40px;	
+    width: 100%;
+    font-size: 7pt;
+    opacity: 0.0;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    float: left;
+    z-index: -1;
+    height: 408px;
+    color: white;
+    transition: opacity 1s 3s;
+ }
+
+
